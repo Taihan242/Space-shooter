@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+#define WIDTH 20
+#define HEIGHT 10
+
+// Game variables
+int spaceshipX = WIDTH / 2;
+int bulletX = -1, bulletY = -1;
+int enemyX, enemyY = 0;
+int score = 0;
+
+// Function to delay
+void delay(int ms) {
+    Sleep(ms);
+}
+
+// Function to display the game area
+void display() {
+    system("cls");
+
+    // Draw top border
+    for (int i = 0; i < WIDTH + 2; i++)
+        printf("#");
+    printf("\n");
+
+    // Draw game area
+    for (int y = 0; y < HEIGHT; y++) {
+        printf("#");
+        for (int x = 0; x < WIDTH; x++) {
+            if (y == HEIGHT - 1 && x == spaceshipX) {
+                printf("^"); // Player's spaceship
+            } else if (x == bulletX && y == bulletY) {
+                printf("|"); // Bullet
+            } else if (x == enemyX && y == enemyY) {
+ 
