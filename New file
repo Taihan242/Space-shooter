@@ -2,9 +2,18 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <string.h>
 
-#define WIDTH 20
-#define HEIGHT 10
+#define screenheight 700
+#define screenwidth 1000
+#define asteroidnumber 10
+#define enemyshipnumber 4
+#define spaceshipheight 105
+#define spaceshipwidth 117
+#define asteroidheight 60
+#define asteroidwidth 60
+#define shootwidth 8
+#define shootheight 50
 
 // Game variables
 int spaceshipX = WIDTH / 2;
