@@ -44,4 +44,5 @@ void display() {
             } else if (x == bulletX && y == bulletY) {
                 printf("|"); // Bullet
             } else if (x == enemyX && y == enemyY) {
+hello
  
